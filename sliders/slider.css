@@ -1,0 +1,24 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.slider {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+}
+
+.slide {
+  width: 1920px;
+  flex-shrink: 0;
+  height: 100%;
+}
