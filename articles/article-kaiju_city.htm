@@ -1,0 +1,40 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en-us">
+    <head>
+     <meta name="viewport" content="width=device-width", initial-scale= "1.0"/>
+     <link rel="stylesheet" href="slider.css">
+   </head>
+   <body>
+    <section>
+     <p>Hi. This time I wanted to create a Kaiju destroying a city, and this is the animation I made in Blender:</p>
+     <div>
+      <video width="1080px" height="1436px" controls> <source src="../media/kaiju_city/videos/kaiju_city-animation.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>For the city, I actually created a map editor, using Geometry Nodes and an Image Texture.</p>
+     <div>
+      <video width="1920px" height="1080px" controls> <source src="../media/kaiju_city/videos/kaiju_city-map_editor.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>The map editor determines what objects will be instantiated, according to the correspoding shade of gray and the inputs of the Instancer node (custom node shown below). Up to four shades can be used. In this project, I used 3 of them for buildings zones and 1 for a vegetation zone.</p>
+     <div>
+      <img src="../media/kaiju_city/images/kaiju_city-GN_map_and_raycast.jpg" alt="Geometry Nodes" width="1920px" height="1080px" style="maxwidth:100%,height:auto;"</img>
+     </div>
+     <p>The Map Mask node in the previous image, is a custom node. It works as a Gate to differentiate every map zone.</p>
+     <div>
+      <img src="../media/kaiju_city/images/kaiju_city-GN_Gate.jpg" alt="Geometry Nodes" width="1920px" height="1080px" style="maxwidth:100%,height:auto;"</img>
+     </div>
+     <p>Simultaneously, this same node is used inside every zone, to instantiate buildings (or vegetation objects) randomly.</p>
+     <div>
+      <img src="../media/kaiju_city/images/kaiju_city-GN_instancer.jpg" alt="Geometry Nodes" width="1920px" height="1080px" style="maxwidth:100%,height:auto;"</img>
+     </div>
+     <p>Finally, city's destruction is also controlled using a RayCast Node, in Geometry Nodes</p>
+     <div>
+      <video width="1920px" height="1080px" controls> <source src="../media/kaiju_city/videos/kaiju_city-destruction_raycast.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+    </section>
+   </body>
+  </html>
