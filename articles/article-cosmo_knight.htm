@@ -1,0 +1,48 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en-us">
+    <head>
+     <meta name="viewport" content="width=device-width", initial-scale= "1.0"/>
+     <link rel="stylesheet" href="slider.css">
+   </head>
+   <body>
+    <section>
+     <p>Hi.I made this fan animation for the game Cosmo Knight Zion, a homebrew GameBoy game developed by Zeichi Games. Its art is inspired by Saint Seiya.</p>
+     <div>
+      <video width="1440px" height="1080px" controls> <source src="../media/cosmo_knight/videos/CK-animation.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>The animation is synchronized with one of the OST songs. I didn't included it here due to copyright. But you can see it (and listen to it) in my X profile.</p>
+     </div>
+     <p>Character, background and animations are inspired by their concept art and also by pixel art inside game. I wanted the animation to look like something you could find in a 3D anime video game.</p>
+     </div>
+     <p>One of the most interesting things that I did, was to use Properties to animate Material Shaders through the Attribute Node. I learned this in an article by Blender Studio: https://studio.blender.org/blog/rigging-shaders/ .If you are interested in games, I recommend you to read also all their posts about their game DogWalk, that shows their workflow between Blender and Godot.</p>
+     </div>
+     <p>I used a property in the Character Object to drive his clothes transition. This property is controlled by a driver, that is tied to the Scale Channel of a Bone.</p>
+     <div>
+      <video width="1920px" height="1022px" controls> <source src="../media/cosmo_knight/videos/CK-bone_driver_property.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>This same property is referred by the character's Material in order to switch between both Node branches, eachcorresponding to different clothes.</p>
+     <div>
+      <img src="../media/cosmo_knight/images/CK-attribute_material.jpg" alt="Animation of Material through Attribute Node" width="2050px" height="auto" style="maxwdith:100%"</img>
+     </div>
+     <p>This is complemented by some Mask Modifiers that refer that same property, in order to hide or reveal the remaining accesories.</p>
+     </div>
+     <p>I also made a Rig for the Armor, that switches armor parts between the character and their display pose through a property.</p>
+     <div>
+      <video width="1920px" height="1022px" controls> <source src="../media/cosmo_knight/videos/CK-armor_snap.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>Armor part meshes are parented to an Armor bone, that copies the transform of either of two Mechanism bones: one constrained to the character's rig and one for the Armor display.</p>
+     <div>
+      <img src="../media/cosmo_knight/images/CK-def_mech_bones.jpg" alt="Deformation and Mechanism Rig Bones" width="2050px" height="auto" style="maxwdith:100%"</img>
+     </div>
+     <p>I used properties for various other things to save work, like switching between Mirror Modifiers to get assembling animations for free, turning on and off Armor Modifier for armor parts (so that they deformed only whe put on), etc.</p>
+     </div>
+     <p>Thanks for reading!</p>
+     </div>
+    </section>
+   </body>
+  </html>
