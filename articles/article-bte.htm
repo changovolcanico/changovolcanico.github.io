@@ -1,0 +1,44 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en-us">
+    <head>
+     <meta name="viewport" content="width=device-width", initial-scale= "1.0"/>
+     <link rel="stylesheet" href="article.css">
+   </head>
+   <body>
+    <section>
+     <p>Hi. I recently played Black Tower Enigma, a homebrew game for the GameBoy developed by the studio Ogre Pixel. About the same time, I was watching a gameplay of the original Snes realease of Super Mario RPG, and thought: what would the intro of BTE look like if it had been released for the Snes, and animated like Super Mario RPG? And here we go! </p>
+     <div>
+      <video width="1192px" height="896px" controls> <source src="../media/bte/videos/bte-animation.mp4" type="video/mp4"> </video>
+     </div>
+     </div>
+     <p>I uploaded a version that includes music from the game to my X profile, but prefered not to upload it here to avoid (or reduce at least) copyright problems: https://x.com/changovolcanico/status/2072511988249300999 </p>
+     </div>
+     <p>I made the 3D models of characters based in the collectable pictures that you find in the game (very much like in TLoZ Links Awakening), but trying to also get a look similar to characters in Super Mario RPG</p>
+     <div>
+      <img src="../media/bte/images/bte-wigo_galda.jpg" alt="Characters 3d models" width="1920px" height="auto" style="max-width:100%"</img>
+     </div>
+     <p>Then I rigged them using Rigify. I started with the Simple Human metarig, then added extra samples for the face, ears, fingers and hair</p>
+     <div>
+      <img src="../media/bte/images/bte-wigo_galda-rigs.jpg" alt="Rigs" width="1920px" height="auto" style="max-width:100%"</img>
+     </div>
+     <p>Stage is based on pixel art in game, while vfx take inspiration from both this game and those in Super Mario RPG.</p>
+     </div>
+     <p>For the final look, I decided to render in Workbench, as I thought it matched better the look of Super Mario RPG. On the other hand, my approach to make it look like a Snes game being played on a CRT was as follows.</p>
+     </div>
+     <p>According to what (I think) I learned in the Youtube channel Displaced Gamers, I rendered in a resolution of 226x224 pixels, as that would match the number of samples in the output of a Snes. Then, I scaled renders by 2 only vertically in the compositor, and multiplied them by a texture with black and white lines to simulate (what we know today as) scanlines, approaching the progressive scan resolution of 480p.</p>
+     </div>
+     <p>Next, I stretched the obtained images horizontally to match the 4:3 aspect ratio of CRTs (something that in fact occurred when displaying Snes games). The last step was to increase the contrast a little and finally scale by two to obtain a bigger image, easier to show in screens we used nowadays.</p>
+     <div>
+      <img src="../media/bte/images/bte-compositor.jpg" alt="Stage and Vfx" width="1920px" height="auto" style="max-width:100%"</img>
+     </div>
+     <p>I also tested using a 256-color palette, but to be honest, it did not look good. So I left it as is.</p>
+     </div>
+     <p>And that is it. Thanks for reading!</p>
+     <div>
+      <img src="../media/bte/images/bte-compositor.jpg" alt="Stage and Vfx" width="1920px" height="auto" style="max-width:100%"</img>
+     </div>
+    </section>
+   </body>
+  </html>

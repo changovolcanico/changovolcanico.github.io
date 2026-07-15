@@ -1,12 +1,11 @@
-
 body{
   color:white;
-  background-color:white;
+  background-color:#0066AA;
   font-family:"Georgia","Times New Roman", "Times", "Serif";
   font-size: 20pt;
 }
 article{
-  background-color: #333333;
+  background-color: #000033;
 }
 
 h1 {
@@ -35,15 +34,13 @@ li a:hover {
 
 article.horizontal {
  display:flex;
- background-color: #333333;
+ background-color: #FF4455;
  margin:10px;
 }
 
 section {
-  background-color:blue;  
-  padding:10px;
-  border: 3px;
-  margin:10px;
+  background-color:#004455;  
+  margin: 4em 4em 1em 1em;
 }
 
 
